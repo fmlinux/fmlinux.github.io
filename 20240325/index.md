@@ -48,3 +48,15 @@ Vlastimil Babka 提交了 Linux 6.9 的 SLUB（SLAB）变更，并突出显示�
 <br>
 ![图片暂时迷路了！！:(](img/3.png)
 ## 新闻4
+Linux 内核中长期存在的 speakup 驱动程序是一个语音合成器，它可以作为各种合成器硬件的接口，并且用户空间软件可以通过 /dev/synth 与合成器接口提交数据。在 Linux 6.9 版本中，speakup 驱动程序有了两项有用的改进。
+<br>
+首先，speakup 驱动程序修复了提交到 /dev/synth 的 8 位字符的问题。添加了对无符号字符的支持，以避免在向设备写入 8 位字符时出现乱码的情况。
+<br>
+Linux 6.9 的另一个显著新增功能是为 speakup 驱动程序添加了 /dev/synthu 设备。由于大多数应用程序现在使用 UTF-8 编码，/dev/synthu 是一个在 /dev/synth 之上的新接口，允许合成非拉丁1字符。新的 /dev/synthu 设备限制为 16 位 Unicode，就像 speakup 的其他部分一样，任何奇怪的输入或超过 16 位的将被自动丢弃。
+<br>
+不熟悉这个语音合成 Linux 内核辅助功能的人可以通过 Linux-Speakup.org 了解更多信息和使用方法。
+<br>
+这些 speakup 改进是作为 Linux 6.9 合并窗口的 char/misc 变更的一部分发送的。char/misc 拉取的其余部分是通常的小型和相当随机的驱动程序更新/修复。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+## 新闻5
