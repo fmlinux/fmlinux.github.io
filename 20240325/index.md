@@ -24,3 +24,27 @@ Linux 6.9 正在重新引入未定义行为消毒器（UBSAN）有符号溢出�
 <br>
 ![图片暂时迷路了！！:(](img/2.png)
 ## 新闻3
+Linux 6.8 在 v6.5 版本中弃用了 SLAB 分配器，现在只留下 SLUB 来处理所有分配任务。对于 Linux 6.9，继续清理 SLAB 的移除，并对 SLUB 进行更多改进。
+<br>
+Vlastimil Babka 提交了 Linux 6.9 的 SLUB（SLAB）变更，并突出显示了以下几点：
+<br>
+*--自由列表加载优化（Chengming Zhou）*
+<br>
+*当每个 CPU 的 slab 耗尽并从 CPU 部分列表中加载新的 slab 时，优化加载过程以避免 IRQ 启用/禁用周期。这在 “perf bench sched messaging” 测试中带来了 3.5% 的性能提升。*
+<br>
+*--SLAB 移除后的内核启动参数清理（Xiongwei Song）*
+<br>
+*由于我们有两种不同的主要 slab 实现，我们的启动参数前缀要么是 slab_ 要么是 slub_，随着两种实现都获得相同的功能（即 slab_nomerge vs slub_nomerge），一些参数后来成为别名。为了最终摆脱特定于实现的名称，现在所有规范和文档化的参数都以 slab_ 为前缀，而 slub_ 变体成为已弃用但仍在工作的别名。*
+<br>
+*--SLAB_ kmem_cache 创建标志清理（Vlastimil Babka）*
+<br>
+*标志有硬编码的 #define 值，添加新值时变得繁琐且容易出错。通过枚举分配值，该枚举负责提供唯一的位号。还弃用了仅由 SLAB 使用的 SLAB_MEM_SPREAD，因为自 SLAB 移除后它就是一个空操作。将其分配一个明确的零值。标志使用的移除是在各个子系统中独立处理的，计划在下一个版本中最终移除任何剩余的使用。*
+<br>
+*--杂项清理和修复（Chengming Zhou、Xiaolei Wang、Zheng Yejian）*
+<br>
+*包括移除未使用的代码或函数参数，以及修复内存泄漏。*
+<br>
+这次拉取提供了构成 Linux 6.9 合并代码的完整补丁列表.
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+## 新闻4
