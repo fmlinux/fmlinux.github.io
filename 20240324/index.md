@@ -110,3 +110,13 @@ Linux 6.9 HWMON 还为 Microsoft Surface 设备、MPS MPQ878、Astera Labs PT516
 <br>
 ![图片暂时迷路了！！:(](img/6.png)
 ## 新闻7
+DIRT 5赛车游戏是之前在Linux下的Intel图形硬件上无法运行的游戏之一，原因是ANV Vulkan驱动对稀疏内存的支持不足。但现在，启用了稀疏支持后，游戏在启动时会崩溃。不过，现在有了一个解决办法，可以让Intel的Mesa 24.1 Vulkan驱动与DIRT 5一起工作。
+<br>
+这个已有5个月历史的bug报告一直在跟踪DIRT 5在启用稀疏内存支持的情况下，使用Intel Vulkan Linux驱动时的崩溃问题。通过VKD3D日志，发现这是由于FP64错误所致。
+<br>
+但Intel ANV驱动确实有一个"fp64_workaround_enabled"选项，当着色器使用float64且设备不支持该类型时，可以使用软FP64。现在，只需为Intel ANV驱动启用这个FP64解决方案，并与ANV稀疏支持配合使用，就足以让使用Intel Arc Graphics的Linux玩家享受DIRT 5游戏了。
+<br>
+今天在Mesa 24.1中合并的更新应用了这个FP64解决方案，当检测到DIRT 5进程名时就会启用。现在，这款Windows游戏在Linux上通过Steam Play运行，已经处于可玩状态。
+<br>
+![图片暂时迷路了！！:(](img/7.png)
+## 新闻8
