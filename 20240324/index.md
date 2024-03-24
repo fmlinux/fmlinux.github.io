@@ -98,3 +98,15 @@ Lyude Paul在周五发布了用于审查的补丁，这些补丁将VKMS驱动程
 <br>
 ![图片暂时迷路了！！:(](img/5.png)
 ## 新闻6
+Linux 6.9 版本在硬件监控 “HWMON” 子系统中合并了一些更新，这些更新包括了越来越多的一体式液体/水冷却系统获得 Linux 驱动支持，以便于进行便捷的监控和控制。
+<br>
+Linux 6.9 版本的 HWMON 更新引入了一个新的 “asus_rog_ryujin” 驱动程序，用于支持 ASUS ROG RYUJIN II 360 AIO 冷却器。这款 AIO 冷却器配备了三个 120 毫米的风扇，并且与当前的 AMD 和 Intel 处理器兼容。Linux HWMON 驱动程序允许监控水泵速度、风扇速度，并在有能力的情况下进行控制。
+<br>
+Linux 6.9 还增加了 “nzxt-kraken3” 驱动程序，作为最新的 NZXT Kraken AIO 冷却器驱动程序版本，支持最新的 Kraken X 和 Kraken Z AIO 冷却器。这个驱动程序已经在 NZXT KrakenX53/X63/X73 和 Z53/Z63/Z73 液体冷却器上进行了测试，可以显示液体温度、水泵速度、PWM 控制以及连接风扇的速度/工作率。
+<br>
+Linux 6.9 HWMON 还为 Microsoft Surface 设备、MPS MPQ878、Astera Labs PT5161L 重新定时器、ASPEED G6 PWM/风扇转速计和 Amphenol ChipCap 2 带来了新的硬件监控驱动程序。此次更新还为 nct6683 驱动程序添加了 MSI ID，为 OXP-Sensors 驱动程序中的 Ayaneo Air Plus 7320u 提供了支持，并且为 dell-smm 驱动程序中的 Dell XPS 9315 提供了支持。
+<br>
+更多关于 Linux 6.9 中这些硬件监控驱动程序更新的详细信息，请查看此次合并请求。
+<br>
+![图片暂时迷路了！！:(](img/6.png)
+## 新闻7
