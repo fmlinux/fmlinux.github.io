@@ -60,3 +60,15 @@ Linux 6.9 的另一个显著新增功能是为 speakup 驱动程序添加了 /de
 <br>
 ![图片暂时迷路了！！:(](img/4.png)
 ## 新闻5
+uutils 的 Coreutils 0.0.25 新版本在本周末发布，这是用 Rust 编写的 GNU Coreutils 的替代品，用于 Linux 平台和其他系统上的常见工具。
+<br>
+在 v0.0.25 版本中，Rust Coreutils 自上一版本以来通过了额外的 15 个 GNU 测试套件用例。Rust Coreutils 继续朝着与 GNU Coreutils 完全兼容的目标努力，目标是通过所有测试。目前有 437 个测试通过，50 个被跳过，117 个失败。
+<br>
+v0.0.25 版本修复了各种标志，调整了各种错误消息以匹配 GNU 风格，改进了 Android CI，并进行了其他各种错误修复和兼容性增强。
+<br>
+更多关于 uutils Coreutils 0.0.25 版本的详细信息可以通过 GitHub 获得。
+<br>
+此外，推动 Rust Coreutils 进一步发展的是最近从德国的主权技术基金获得的资金支持。
+<br>
+![图片暂时迷路了！！:(](img/5.png)
+## 新闻6
