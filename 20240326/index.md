@@ -18,3 +18,14 @@ xwayland-run 0.0.3的一个显著特点是为这些工具增加了对KDE的KWin�
 <br>
 ![图片暂时迷路了！！:(](img/2.png)
 ## 新闻3
+Intel今天发布了其NPU Linux驱动程序用户空间组件的新版本，该组件与其iVPU加速器内核驱动程序一起使用，以启用其最新的Meteor Lake系统中的神经处理单元（NPU）。
+<br>
+新的Intel NPU Linux驱动程序1.2版本将oneAPI Level Zero支持提升到v1.16.1，Level Zero API支持已扩展，更加健壮，并且现在也可以针对外部Level Zero实现进行构建。1.2版本还更新了Intel NPU编译器代码（mtl_npu_ud_2024_08_rc3）、更新了Intel NPU固件（ci_tag_ud202408_vpu_rc_20240221_2101），以及其他各种内部更新和修复。总体来看，这个1.2更新主要是对他们的NPU驱动代码进行维护迭代，没有引入任何重大功能/改进。
+<br>
+Intel NPU Linux驱动程序支持继续主要与他们的OpenVINO AI工具包进行测试。对于那些想要了解Intel NPU Linux驱动程序堆栈概览的人，如果之前没有调查过的话（可以看这张图）：
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+<br>
+Intel NPU Linux驱动程序1.2版本可以从GitHub下载，既有源代码形式，也有经过Ubuntu 22.04 LTS验证的Ubuntu（Debian）包二进制文件。
+<br>
+## 新闻4
