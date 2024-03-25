@@ -10,3 +10,11 @@ SysVinit 3.09带来了两个主要变化：首先是增加了对使用musl C库�
 <br>
 ![图片暂时迷路了！！:(](img/1.png)
 ## 新闻2
+自去年以来，Red Hat的工程师们一直在开发xwayland-run和wlheadless-run，分别用于在其专用的XWayland rootful实例中生成X11客户端，以及在一组支持的Wayland headless合成器上运行Wayland客户端。其目的是改善Wayland headless体验，并能够通过rootful XWayland启动和运行经典的X11会话。今天发布了XWayland-Run v0.0.3版本。
+<br>
+xwayland-run 0.0.3的一个显著特点是为这些工具增加了对KDE的KWin合成器的支持。这个最新版本还带来了代码清理，现在Mutter基合成器在它们自己的D-Bus会话中运行，以及其他修复。
+<br>
+可以通过FreeDesktop.org GitLab下载xwayland-run 0.0.3更新的更多细节和这些辅助程序。
+<br>
+![图片暂时迷路了！！:(](img/2.png)
+## 新闻3
