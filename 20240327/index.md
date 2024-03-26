@@ -33,3 +33,14 @@ Libva 2.21还在AV1编码代码中添加了allow_content_tools和force_intger_mv
 目前在TIP.git的"x86/shstk"分支中排队的是为x32添加shadow stack支持。这一支持已经在使用Intel Tiger Lake系统的x32上成功测试，由Intel工程师H.J. Lu进行。现在它已经在TIP分支中，很可能会在今年夏天提交到Linux 6.10内核周期。总之，看到Intel在2024年为Linux x32支持做出改进，这确实有些意外。
 <br>
 ## 新闻4
+Intel今天发布了驱动程序补丁，为其Xe和i915 Linux内核图形驱动程序的DG2/Alchemist系列添加了两个新的PCI ID。
+<br>
+在过去两年多的时间里，他们的开源Linux图形驱动程序代码中已经积累了各种DG2 PCI ID，今天早上又有两个新的PCI ID以补丁形式出现，用于i915和Xe Linux DRM驱动程序。
+<br>
+新的PCI ID是0x56BE和0x56BF。经过一些搜索，在Intel Compute Runtime代码中找到了这两个ID，0x56BE是Intel Arc Graphics A750E变体，而0x56BF是Intel Arc Graphics A580E。关于Arc Graphics A580E和A750E变体，公开的信息不多，所以我们可能很快就会随着驱动程序支持的出现而了解更多。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+<br>
+对于i915和Xe内核图形驱动程序，根据补丁，只需要新的PCI ID，无需在现有的DG2/Alchemist代码路径上进行其他驱动更改。通常，PCI ID的添加被视为当前（v6.9）内核周期的“修复”的一部分，是比较安全的，或者可能会推迟到v6.10，这取决于Intel是否急于推出新的硬件支持。
+<br>
+## 新闻5
