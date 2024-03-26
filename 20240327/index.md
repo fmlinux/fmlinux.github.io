@@ -11,4 +11,14 @@
 请查看这次拉取，了解初步为 Linux 6.10 准备的 DRM-Misc-Next 材料，预计在今年夏天。
 <br>
 ## 新闻2
-![图片暂时迷路了！！:(](img/1.png)
+Intel维护的通用VA-API库"libva"的工程师们今天发布了2.21版本，为这个视频加速API支持带来了几项修复和添加。
+<br>
+通用的libva 2.21库增加了一个驱动程序名称映射，以支持新的Intel Xe内核模式驱动程序。Intel Xe已合并到Linux 6.8中，并且是Lunar Lake之前几代的实验性驱动选项。现在，随着libva 2.21的发布，为使用Xe驱动程序的用户提供了适当的映射，而不是现有的i915驱动程序。
+<br>
+![图片暂时迷路了！！:(](img/2.png)
+<br>
+Libva 2.21还在AV1编码代码中添加了allow_content_tools和force_intger_mv，各种针对Windows平台的特定修复/添加，当所有Wayland后端失败时的修复，持续集成（CI）更新，以及各种构建更新。
+<br>
+通过GitHub下载和查看libva 2.21 VA-API库更改的完整列表。
+<br>
+## 新闻3
