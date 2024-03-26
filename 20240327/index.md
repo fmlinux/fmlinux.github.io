@@ -22,3 +22,14 @@ Libva 2.21还在AV1编码代码中添加了allow_content_tools和force_intger_mv
 通过GitHub下载和查看libva 2.21 VA-API库更改的完整列表。
 <br>
 ## 新闻3
+在Linux 6.6版本中，作为Intel控制流执行技术（CET）的一部分，Shadow Stack支持终于被合并。这项历经数年的努力使得新一代Intel处理器能更好地防御ROP攻击。对于Linux 6.10版本，Shadow Stack的支持将扩展到x32。
+<br>
+尽管x32 ABI并不十分常见，但它仍然存在。作为提醒，这个Linux ABI提供了x86_64的好处，同时仍然依赖于32位指针。它相对于x86 32位的优势在于能够利用x86_64增加的寄存器集、浮点改进等，但仍然依赖于32位指针，并且每个进程的内存限制为4GB。
+<br>
+十年前，x32 ABI听起来非常不错，但如今在实际应用中很少听到有关x32的消息，大多数用户对x86_64感到满意。甚至偶尔有人呼吁是否应该弃用x32。不过，令人惊讶的是，我们现在看到Shadow Stack支持x32。
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+<br>
+目前在TIP.git的"x86/shstk"分支中排队的是为x32添加shadow stack支持。这一支持已经在使用Intel Tiger Lake系统的x32上成功测试，由Intel工程师H.J. Lu进行。现在它已经在TIP分支中，很可能会在今年夏天提交到Linux 6.10内核周期。总之，看到Intel在2024年为Linux x32支持做出改进，这确实有些意外。
+<br>
+## 新闻4
