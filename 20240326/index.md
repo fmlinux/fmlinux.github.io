@@ -88,4 +88,3 @@ Inkscape 通过他们的 Mastodon 账户宣布了这个周末过渡到 GTK3。�
 （图片为目前的Inkscape GTK3 界面）
 <br>
 ![图片暂时迷路了！！:(](img/7.png)
-## 新闻8
