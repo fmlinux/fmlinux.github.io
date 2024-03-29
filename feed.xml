@@ -4,14 +4,14 @@ layout: null
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-
     <channel>
         <title>{{ site.title }}</title>
         <link>{{ site.url }}</link>
         <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" />
         <description>开源新闻汇总</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        {% for page in site.html_pages %}
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+        {% for page in site.html_pages limit:10 %}
           {% if page.url != '/' %}
           <item>
               <title>{{ page.title }}</title>
@@ -21,7 +21,6 @@ layout: null
               <description>
                   {{ page.content | escape | truncate: '400' }}
               </description>
-              <lastBuildDate>{{ page.modified_time | date_to_rfc822 }}</lastBuildDate>
               <guid>
                   {{ page.url | prepend: site.url }}
               </guid>
