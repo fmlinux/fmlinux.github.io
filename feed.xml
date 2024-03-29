@@ -11,18 +11,18 @@ layout: null
         <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" />
         <description>{{ site.description }}</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        {% for post in site.posts %}
+        {% for page in site.pages %}
         <item>
-            <title>{{ post.title }}</title>
+            <title>{{ page.title }}</title>
             <link>
-                {{ post.url | prepend: site.url }}
+                {{ page.url | prepend: site.url }}
             </link>
             <description>
-                {{ post.content | escape | truncate: '400' }}
+                {{ page.content | escape | truncate: '400' }}
             </description>
-            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
             <guid>
-                {{ post.url | prepend: site.url }}
+                {{ page.url | prepend: site.url }}
             </guid>
         </item>
         {% endfor %}
