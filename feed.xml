@@ -11,7 +11,7 @@ layout: null
         <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" />
         <description>{{ site.description }}</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        {% for page in site.pages %}
+        {% for page in site.html_pages %}
         <item>
             <title>{{ page.title }}</title>
             <link>
