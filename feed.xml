@@ -12,19 +12,21 @@ layout: null
         <description>{{ site.description }}</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         {% for page in site.html_pages %}
-        <item>
-            <title>{{ page.title }}</title>
-            <link>
-                {{ page.url | prepend: site.url }}
-            </link>
-            <description>
-                {{ page.content | escape | truncate: '400' }}
-            </description>
-            <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
-            <guid>
-                {{ page.url | prepend: site.url }}
-            </guid>
-        </item>
+          {% if page.url != '/' %}
+          <item>
+              <title>{{ page.title }}</title>
+              <link>
+                  {{ page.url | prepend: site.url }}
+              </link>
+              <description>
+                  {{ page.content | escape | truncate: '400' }}
+              </description>
+              <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+              <guid>
+                  {{ page.url | prepend: site.url }}
+              </guid>
+          </item>
+          {% endif %}
         {% endfor %}
     </channel>
 </rss>
