@@ -11,7 +11,7 @@ layout: null
         <description>开源新闻汇总</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for page in site.html_pages limit:10 %}
+        {% for page in site.html_pages reversed limit:10 %}
           {% if page.url != '/' %}
           <item>
               <title>{{ page.title | xml_escape }}</title>
