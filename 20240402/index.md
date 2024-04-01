@@ -24,3 +24,24 @@ IBM s390/zSeries硬件的Linux内核代码现在可以除了长期使用的GNU�
 ![图片暂时迷路了！！:(](img/2.png)
 <br>
 ## 3.
+Serpent OS Linux发行项目希望在未来几周内能够发布他们的预Alpha ISO，因为他们继续推进初始桌面体验，并使他们的操作系统构建工具更加完善。
+<br>
+Doherty在2024年3月的状态更新中概述了这个原创Linux发行版的最新工作。这位前Solus Linux创始人总结了Serpent OS的最新努力：
+<br>
+1.Serpent OS一直在努力提升他们的桌面体验，包括打包NetworkManager、Vulkan和Mesa驱动支持，以及其他核心桌面部件。GNOME软件和Flatpak也作为这个初始的"裸机启动硬件"努力的一部分在工作。
+<br>
+2.Serpent OS正在跟踪System76所做的工作，他们用Rust编写了COSMIC桌面，并期待在Serpent OS中提供它。
+<br>
+3.Serpent OS希望很快能够发布这个Linux发行版的预Alpha ISO。
+<br>
+4.Serpent OS的Boulder构建工具已经进行了工作，以提高性能，在某些情况下，打包时间比以前快了大约50%。
+<br>
+5.Boulder的包负载现在使用多线程Zstd压缩。
+<br>
+6.Serpent的Moss工具也进行了优化、代码清理和其他工作。
+<br>
+Serpent OS开发者希望能够在"未来几周"发布预Alpha ISO，并预计在4月底前有更多消息。更多信息请访问SerpentOS.com。
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+<br>
+## 4.
