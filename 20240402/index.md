@@ -45,3 +45,14 @@ Serpent OS开发者希望能够在"未来几周"发布预Alpha ISO，并预计�
 ![图片暂时迷路了！！:(](img/3.png)
 <br>
 ## 4.
+Linux Mint 团队在他们三月份的状态更新中分享了更多关于即将发布的基于 Ubuntu 24.04 LTS 的 Linux Mint 22 的细节。
+<br>
+在 Linux Mint 22 发布道路上的最新更新包括对本地化支持的更多工作，软件源工具将支持 Deb822 格式，PipeWire 将作为 Linux Mint 22 的默认声音服务器，Pix 图像查看器将支持 JPEG-XL 图像，并且他们打算继续使用 Ubuntu 的内核版本。Linux Mint 还致力于为 GIMP 文件开发了一个新的缩略图制作器，Linux Mint 将打包他们自己的 Thunderbird 邮件客户端，而不是跟随 Ubuntu 使用 Thunderbird Snap，并且 GNOME Online Accounts 已被分叉为一个新的 Linux Mint XApp。Linux Mint 也在继续开发 Jargonaut 聊天室应用。
+<br>
+很高兴看到 Linux Mint 支持 JPEG-XL，考虑到 Ubuntu 24.04 不会默认支持 JPEG-XL，而是需要从 universe 存档中安装一个包来支持。与此同时，使用 PipeWire 而不是 PulseAudio 作为默认的音频服务器几乎不再是什么新鲜事，因为几乎所有的桌面 Linux 发行版都已经迁移到了 PipeWire，用于 Linux 桌面的音频/视频流。
+<br>
+有关 Linux Mint 最新开发活动的更多细节，请查看今天的 Linux Mint 博客文章。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+<br>
+## 5.
