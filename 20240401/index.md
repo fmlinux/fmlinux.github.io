@@ -116,3 +116,12 @@ Flax Engine 1.8的更新带来了全新的用户界面编辑器，支持.NET SDK
 Flax Engine 1.8可以从GitHub下载。更多关于Flax Engine 1.8更新的信息，请访问FlaxEngine.com博客。
 <br>
 ## 9.
+Asahi AGX Gallium3D驱动程序的主要开发者Alyssa Rosenzweig已经完成了一次重大的同步，将这个开源Apple Silicon OpenGL图形驱动程序更新到即将发布的Mesa 24.1版本。
+<br>
+在即将到来的Mesa 24.1分支之前，这次同步为这个Apple Silicon用户空间驱动程序带来了123个新的补丁。这次最新的上游同步增加了一个Braun-Hack溢出处理器，一个前置/后置系统以消除几乎所有的着色器变体，以及一个常量提升优化过程，以帮助许多压力受限工作负载的性能。还添加了一个快速链接器和其他各种优化。
+<br>
+总的来说，周五晚上的合并增加了6.4k行新的驱动代码，同时移除了2.3k行现有代码。这些Asahi AGX性能优化和其他工作将在大约两个月后作为Mesa 24.1的稳定版本发布。
+<br>
+![图片暂时迷路了！！:(](img/9.png)
+<br>
+## 10.
