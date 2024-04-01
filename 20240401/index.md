@@ -65,3 +65,30 @@ NetBSD 10.0还改进了混合系统的调度器性能，各种系统调用优化
 更多关于NetBSD 10.0发布的详情，请通过NetBSD.org下载。
 <br>
 ## 6.
+Linux Foundation Europe的管理下，Servo Web引擎在Igalia和其他开发者的持续贡献下，继续保持着非常活跃的一年。参与的开源开发者们正忙于将这个用Rust编写的网页布局引擎打造成良好状态，以便可能作为其他软件的嵌入式友好解决方案。
+<br>
+Servo项目今天发布了他们2024年3月的月度状态更新，突出展示了过去一个月的所有进展。一些3月份的亮点包括：
+<br>
+Servo现在已经超越了整套Web平台测试中的传统布局引擎。
+<br>
+对WOFF2网络字体的支持。
+<br>
+对box-shadow、text-shadow、conic-gradient()、repeating-conic-gradient()等CSS特性的支持。
+<br>
+HTML表格支持现在在Servo中默认启用。
+<br>
+各种2D画布的改进。
+<br>
+WebRender、Stylo、SpiderMoney和GStreamer都已升级。
+<br>
+开发工具已更新，以确保支持WebM和AV1内容。
+<br>
+继续努力使Servo引擎易于嵌入。
+<br>
+Servo参与了Outreachy，并且得益于这些贡献者，代码得到了改进和clippy错误修复，以及其他工作。
+<br>
+更多关于Servo网页引擎在2024年3月的进展详情，可以通过Servo.org博客找到。
+<br>
+![图片暂时迷路了！！:(](img/6.png)
+<br>
+## 7.
