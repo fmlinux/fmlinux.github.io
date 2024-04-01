@@ -13,3 +13,14 @@ Linux 6.10内核周期之前，TIP.git的"x86/cpu"分支中排队的一个补丁
 关于这个AMD 0x80000026叶片解析的更多细节可以通过这个补丁获得。再次说明，由于现在已经在TIP.git中，并通过x86/cpu方式，这个修正的AMD CPU拓扑信息应该提交给下一个内核周期，即Linux 6.10，而不是进入当前v6.9周期的"x86/fixes”。
 <br>
 ## 2.
+Linux 6.9的特性之一是，s390内核构建现在可以使用完整的LLVM编译器堆栈进行。
+<br>
+IBM s390/zSeries硬件的Linux内核代码现在可以除了长期使用的GNU编译器集合（GCC）之外，还可以用LLVM/Clang构建。在v6.9合并窗口期间，s390合并回来的更改允许使用“LLVM=1”选项编译s390内核。不过，这确实需要最新的LLVM编译器代码，因为只有全新的LLVM/Clang 18.1编译器版本才能看到适当的s390/SystemZ支持。
+<br>
+使用LLVM=1构建Linux内核，不仅可以使用Clang编译器，还可以使用ld.lld链接器和其他各种LLVM工具（CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump READELF=llvm-readelf HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld）。以前，IBM s390/SystemZ Linux内核可以用Clang构建，但保留了其他GNU工具。
+<br>
+周日合并到Linux 6.9的文档更新概述了使用LLVM 18.1+时完整的“LLVM=1”内核构建支持。
+<br>
+![图片暂时迷路了！！:(](img/2.png)
+<br>
+## 3.
