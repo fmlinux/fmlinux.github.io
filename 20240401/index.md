@@ -28,3 +28,14 @@ Redox OS项目一如既往地令人兴奋。
 ![图片暂时迷路了！！:(](img/2.png)
 <br>
 ## 3.
+GNU Poke 4.0在开发了一年后发布，它增强了这款开源软件，作为一个交互式的二进制数据编辑器，并附带了自己的过程式编程语言。
+<br>
+GNU Poke 4.0带来了许多用户界面更新，一个新的“pokefmt”工具用于简单的模板系统，各种Poke语言更新，库更新，更新了用于处理不同形式二进制数据的pickles，以及原生Windows构建支持。GNU Poke现在支持在Microsoft Windows系统上构建和运行poke、libpoke和pokefmt。
+<br>
+关于GNU Poke 4.0发布的更多细节可以通过邮件列表公告获得。
+<br>
+开发者Jose E. Marchesi在周六还发布了poke-elf 1.0。Poke-ELF 1.0是这个项目的首个版本，是一个功能齐全的GNU Poke pickle，用于编辑ELF对象文件、可执行文件、共享库和核心转储。Poke-ELF 1.0支持多种架构和扩展，并作为GNU Poke项目的一部分正在开发。
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+<br>
+## 4.
