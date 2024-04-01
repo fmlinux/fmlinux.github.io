@@ -146,3 +146,20 @@ Baloo不再尝试索引临时挂载的文件系统（如网络共享）上的内
 更多关于本周KDE变化的细节可以通过Nate Graham的博客获得。
 <br>
 ## 11.
+AMD GPUOpen的Orochi项目是一个努力，允许在Radeon HIP和NVIDIA CUDA API之间进行动态运行时切换，以实现更好的跨GPU可移植性。今天标志着Orochi 2.0的可用性，用于增强这个API以针对NVIDIA CUDA和AMD HIP硬件。
+<br>
+AMD的Orochi不应与AMD之前资助的ZLUDA混淆，ZLUDA是一个建立在ROCm之上的即插即用CUDA实现。相反，Orochi是它自己的API，反过来可以在运行时从单个二进制文件中针对NVIDIA CUDA和AMD HIP使用。应用程序需要被适配以使用Orochi。
+<br>
+随着刚刚发布的Orochi 2.0，与Orochi 1.0相比，实现了"更多"的CUDA和HIP函数。发布公告称，Orochi 2.0的函数覆盖率应该是"几乎穷尽的"。
+<br>
+Orochi 2.0还带来了Direct3D 12互操作性以及纹理的新演示。Orochi 2.0还改进了HIP和CUDA之间的绑定和命名，以获得更好的可维护性。
+<br>
+将现有的Orochi 1.x应用程序移植到使用Orochi 2.0 API被描述为直接且变化最小。
+<br>
+通过GitHub可以下载AMD的Orochi 2.0发布的更多详情。
+<br>
+![图片暂时迷路了！！:(](img/11-1.png)
+<br>
+![图片暂时迷路了！！:(](img/11-2.png)
+<br>
+## 12.
