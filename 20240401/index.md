@@ -39,3 +39,20 @@ GNU Poke 4.0带来了许多用户界面更新，一个新的“pokefmt”工具�
 ![图片暂时迷路了！！:(](img/3.png)
 <br>
 ## 4.
+最新版本的Flowblade，一个开源的Linux视频编辑器，已于本周末发布。Flowblade带来了一些新功能，同时升级到GTK4工具包的工作仍在进行中，希望能在2025年准备就绪。
+<br>
+Flowblade 2.14新增了对USB操纵杆/快进快退支持的支持，目前已支持Contour Design ShuttlePRO v2、Contour Design ShuttleXpress和Contour A/V Solutions SpaceShuttle设备。
+<br>
+Flowblade 2.14还新增了可编辑的标题剪辑，支持在播放头位置粘贴剪辑，图形剪辑现在可以被拖动到任意长度，慢动作视频播放现在可用，以及各种滤镜更新。除了增强现有滤镜外，这个新版本还新增了弹性扭曲和音频压缩滤镜。Flowblade 2.14还修复了许多错误。
+<br>
+在GitHub上可以下载更多关于新版Flowblade 2.14视频编辑器的详情。
+<br>
+发布说明还概述了GTK4用户界面移植的当前进行中的工作：
+<br>
+*“我们已经移除了几乎所有的Gtk.Menu实例。我们花了一些时间进行大部分脚本化的测试转换，以全面探索所需的更改。所需的工作看起来相当可行，我们将能够使用脚本完成大部分转换工作，但有一些障碍需要解决，这与GTK4不再拥有每个小部件XWindows有关。目前看来，GTK4移植将在2025年某个时候完成。”*
+<br>
+所以希望明年我们能看到一个GTK4版的Flowblade视频编辑器。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+<br>
+## 5.
