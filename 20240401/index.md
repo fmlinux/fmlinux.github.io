@@ -242,3 +242,18 @@ Intel工程师Vivek Kasireddy解释了这些VirtIO DRM补丁：
 ![图片暂时迷路了！！:(](img/16.png)
 <br>
 ## 17.
+Samba 4.20作为最新的功能更新发布，这是一个免费软件实现，支持SMB网络协议和其他功能，以增强与Microsoft Windows系统的文件/打印互操作性。
+<br>
+在Samba 4.20中，samba-tool现在提供了对Group Managed Service账户的客户端支持，Samba现在默认构建了新的实验性Windows Search Protocol (WSP)客户端支持，并带有"wspsearch"命令行工具，支持使用smbcacls保存/恢复文件中的DACLs，Samba AC/DC支持认证筒仓和认证策略，以及其他变更。
+<br>
+默认情况下，新的wspsearch CLI客户端用于Windows Search Protocol，允许向支持WSP的服务器发送WSP搜索请求。 
+<br>
+Samba 4.20还增加了Service Witness Protocol (MS-SWN)支持，因此客户端可以通过询问另一个集群节点，来监控其当前的SMB连接到集群节点，看看原始集群的IP地址是否发生变化或从其角度变得可用。
+<br>
+Samba 4.20还取消了对Perl JSON模块的依赖，对Samba配置文件进行了一些小的更改，以及其他修复。
+<br>
+更多关于周三Samba 4.20发布的详情，请通过Samba.org下载。
+<br>
+![图片暂时迷路了！！:(](img/17.png)
+<br>
+## 18.
