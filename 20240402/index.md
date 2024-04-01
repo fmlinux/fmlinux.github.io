@@ -71,3 +71,24 @@ CachyOS.org博客概述的2024年4月更新还包括各种bug修复和其他包�
 ![图片暂时迷路了！！:(](img/5.png)
 <br>
 ## 6.
+![图片暂时迷路了！！:(](img/6.png)
+<br>
+Nitrux开发者Uri Herrera今天宣布，Nitrux 3.4作为这个基于Debian的、无systemd的、不可变的发行版的最新稳定版本已经发布，并且可供普遍使用。这个发行版围绕KDE软件构建。
+<br>
+Nitrux的月度发布持续进行，Nitrux 3.4作为另一个版本发布，搭载了KDE Plasma 5.27.10 LTS桌面环境系列，这将继续是Nitrux在2024年的默认图形环境，直到开发者们将其切换到Maui Shell。
+<br>
+这意味着Nitrux不会升级到最新的KDE Plasma 6桌面环境。此外，从这个版本开始，Nitrux现在使用来自Debian的KDE Plasma、KDE Gear和KDE Frameworks包，而不是KDE neon，后者已经转移到KDE的最新Plasma、Frameworks和Qt发布版本。
+<br>
+Uri Herrera在博客文章中说：
+<br>
+*“这意味着，是的，在2024年末，我们将默认开始使用Maui Shell作为我们的主要（也是唯一的）桌面环境，告别十年使用KDE Plasma的时光。然而，这并不意味着我们不会继续使用KDE技术；我们会继续使用。”*
+<br>
+为什么Nitrux不使用KDE Plasma 6？因为它的定制Plasma桌面，NX Desktop，使用了太多尚未移植到Plasma 6的小部件和plasmoids。这将给Nitrux开发者更多时间专注于他们的Maui Shell和Maui Apps，这些应用也正在被移植到最新的Qt 6应用程序框架。
+<br>
+Nitrux 3.4版本还包括Linux内核6.7.11，Mozilla Firefox 124网络浏览器，一个更新的Nitrux更新工具系统实用程序，现在它会在检测到NVIDIA硬件时显示警告，以及一个更新的NX桌面配置实用程序，现在可以让你打开/关闭双击以在Maui Apps中打开文件夹。
+<br>
+此外，新的Nitrux版本还包括一个为Plasma系统监视器应用程序更新的自定义页面插件，用于显示CPU温度和频率，以及四个新包，即saferm包装器，用于拦截执行rm命令，GeoClue D-Bus地理信息服务，Powercap工具，用于访问powercap Linux内核功能，以及Ethtool实用程序，用于控制网络驱动程序和硬件。
+<br>
+当然，各种bug被修复，驱动程序也得到更新，以获得更好的硬件支持。Nitrux 3.4现在可以从官方网站下载新安装。
+<br>
+## 7.
