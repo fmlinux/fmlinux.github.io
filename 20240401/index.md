@@ -163,3 +163,22 @@ Orochi 2.0还带来了Direct3D 12互操作性以及纹理的新演示。Orochi 2
 ![图片暂时迷路了！！:(](img/11-2.png)
 <br>
 ## 12.
+自90年代中期以来，随着P6微架构为Pentium Pro的第六代x86微架构，Intel一直依赖于“Family 6”CPU ID。从那时起，Intel只是在Family 6内为每个新的微架构/核心增加了型号号码。例如，Meteor Lake是Family 6 Model 170，Emerald Rapids是Family 6 Model 207。这种CPU ID识别在Linux内核和其他操作系统中用于识别CPU代以进行正确处理等。但是Intel Linux工程师今天透露，Family 6即将在“不久”的将来结束。
+<br>
+由于Intel几十年来一直依赖于“Family 6”，Linux内核代码专门处理Family 6，并且只期望通过模型ID比较来检查Intel CPU代/核心。另一方面，AMD定期调整他们的Family ID，例如Zen / Zen 2是Family 23，Zen 3 / Zen 4是Family 25，现在Zen 5是Family 26。但由于Intel即将结束Family 6，他们现在需要重新工作大量的CPU ID检查以确保未来的兼容性，同时继续处理现有的Intel处理器。
+<br>
+![图片暂时迷路了！！:(](img/12-1.png)
+<br>
+目前已经准备了一组74个补丁来调整Intel CPU ID家族识别和Intel未来使用CPUID(1).EAX中扩展家族字段的非零值的计划。Linux内核补丁消息指出，Intel结束使用Family 6的过渡将在“不久”的将来到来。
+<br>
+除了评论说这将在“不久”的将来发生，在清理Intel CPU ID Linux代码时，有一些例子提到新的CPU可能属于其他家族，可能是Douglas Cove / Adams Lake和Intel Sheldonmont / Cooper Forest。
+<br>
+Douglas Cove和Sheldonmont核心名称是新的披露，除非是随机占位符，Adams Lake和Cooper Forest虽然与Intel的命名惯例相符。在Arrow Lake和Lunar Lake之后是Panther Lake，所以如果Adams Lake确实是一个真实的代号，它至少会在2026年出现，并将接替Panther Lake。与此同时，在Xeon E Sierra Forest之后是Clearwater Forest，所以Cooper Forest可能是Clearwater Forest的继任者。同时，根据早期的Intel Linux内核补丁，已经知道Clearwater Forest将是Family 6 Model 221，Lunar Lake将是Family 6 Model 189。所以至少在这些代中Family 6还在继续。
+<br>
+![图片暂时迷路了！！:(](img/12-2.png)
+<br>
+这一系列补丁开始了调整Linux内核代码的征程，为未来超越“Family 6”标识的Intel CPU做准备。这是一个正在进行的努力，可能会在未来几个月内解决，并在这些未来的处理器超越Family 6时代之前上游到Linux内核。
+<br>
+考虑到事情的发展时机和Intel目前正在进行的一系列基本改进，我不禁想知道这个后Family 6时代是否会与拥抱Intel X86S、Intel FRED和其他重大变化的一代同步。如果是这样，2026~2027年应该会非常令人兴奋。
+<br>
+## 13.
