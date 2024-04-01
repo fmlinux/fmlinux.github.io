@@ -210,3 +210,20 @@ Flatpak 1.15.7还取消了对现有Autotools构建系统的支持，转而支持
 ![图片暂时迷路了！！:(](img/14.png)
 <br>
 ## 15.
+今天，一位Intel工程师发布的补丁允许通过在虚拟化领域使用的VirtIO DRM驱动程序，从其他设备导入扫描缓冲区。从其他设备/驱动程序导入扫描缓冲区可以通过避免过多的复制来实现更有效的使用。
+<br>
+今天发布了一组七个补丁，允许通过VirtIO DRM从其他设备导入扫描缓冲区。有了QEMU DMA-BUF支持，这意味着在扫描缓冲区在主机上本地显示并且已经在vRAM中之前，就可以避免复制，然后编码并流式传输到远程客户端以供其他用例使用。
+<br>
+Intel工程师Vivek Kasireddy解释了这些VirtIO DRM补丁： 
+<br>
+*“让virtio-gpu从其他设备导入扫描缓冲区（通过prime）意味着我们将为分配给Guest VM的无头GPU添加一个头，或者为通过的常规GPU设备添加额外的头。在这些情况下，Guest合成器可以使用主GPU渲染到扫描缓冲区，并让次级GPU（virtio-gpu）导入它以用于显示目的。*
+<br>
+*这样做的主要优势是，导入的扫描缓冲区可以在主机上本地显示（例如，使用Qemu + GTK UI），或者编码并流式传输到远程客户端（例如，Qemu + Spice UI）。请注意，由于Qemu使用udmabuf驱动程序，因此在显示时不会对扫描缓冲区进行复制。即使它可能驻留在设备内存中，例如VRAM，这也应该是可能的。*
+<br>
+*这个系列可以支持的具体用例是在运行Weston或其他带有“additional-devices”功能的guest合成器时（./weston --drm-device=card1 --additional-devices=card0）。*
+<br>
+*在上述情况下，card1可以是dGPU或iGPU，而card0将是仅KMS模式的virtio-gpu。然而，这个补丁系列可能特别有用的情况是，当card1是需要与主机上的GPU PF共享其扫描缓冲区（以零拷贝方式）的GPU VF时。或者，当需要在任何两个GPU设备（假设其中一个分配给Guest VM）之间共享扫描缓冲区时，只要它们是P2P DMA兼容的，这也是有用的。”*
+<br>
+这些VirtIO DRM驱动程序补丁现在正在审查中，作为另一个有用的改进，以造福开源虚拟化堆栈。
+<br>
+## 16.
