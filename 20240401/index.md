@@ -92,3 +92,14 @@ Servo参与了Outreachy，并且得益于这些贡献者，代码得到了改进
 ![图片暂时迷路了！！:(](img/6.png)
 <br>
 ## 7.
+George Hotz的Tiny Corp在暂停了他们的AMD GPU驱动的Tinybox后，几天后决定为Tinybox计算系统提供AMD和NVIDIA图形选项，并现在分享了这些计划中的“绿色”和“红色”Tinybox设计的更多规格。
+<br>
+两款Tinybox计算机都将使用未命名的AMD EPYC 32核处理器、128GB的系统RAM、4TB RAID阵列和冗余的1600瓦电源。不同之处在于图形卡，红色版本预计仍将采用Radeon RTX 7900 XTX，而绿色版本将采用NVIDIA GeForce RTX 4090图形卡。Tinybox将符合机架的12U高度要求。
+<br>
+Tinybox Red的零售价为15,000美元，而Tinybox Green的零售价为25,000美元。配备Radeon图形卡的红色版本被描述为具有“中等”图形驱动质量，而NVIDIA专有驱动堆栈提供“优秀”的驱动质量。Ubuntu 22.04 LTS将为这些Tinybox系统提供动力。Tiny Corp在推特上表示，他们预计首批系统将在四月底发货，现已可以预订，需支付100美元定金。他们在Twitter/X上的一次回应中分享说，由于缺乏具有足够视频内存带宽的Intel独立显卡，目前没有Intel Arc Graphics选项。
+<br>
+有兴趣的人可以通过Tinygrad.org找到更多关于这些高性能Linux计算设备的详细信息。
+<br>
+![图片暂时迷路了！！:(](img/7.png)
+<br>
+## 8.
