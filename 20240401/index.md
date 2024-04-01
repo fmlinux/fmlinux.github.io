@@ -227,3 +227,18 @@ Intel工程师Vivek Kasireddy解释了这些VirtIO DRM补丁：
 这些VirtIO DRM驱动程序补丁现在正在审查中，作为另一个有用的改进，以造福开源虚拟化堆栈。
 <br>
 ## 16.
+开源开发者Tomeu Vizoso最近开始了为Rockchip SoC中的Rockchip NPU创建一个开源、反向工程驱动程序的努力。在成功支持VeriSilicon NPU IP的开源NPU驱动程序后，Vizoso接受了开发Rockchip NPU支持的挑战。通过他的开源用户空间驱动程序，他已经让他的第一个模型运行起来了。不仅如此，它的运行性能与专有驱动程序相似。
+<br>
+令人惊讶的是，仅仅在开始他最新的反向工程驱动程序冒险几周后，他的开源代码已经能够在Rockchip NPU上运行MobileNetV1模型。最令人兴奋的是这个声明： 
+<br>
+*“它不仅运行得非常完美，而且性能水平与私有软件相同。”*
+<br>
+他之所以能够迅速取得成功，至少部分归功于他拥有一些来自Rockchip的文档化的寄存器信息，以及他们的驱动程序设计与NVIDIA的NVDLA和ONNX类似，他可以利用文档和代码来帮助反向工程。 
+<br>
+这项Rockchip开源驱动程序工作还依赖于Teflon框架，该框架作为Vivante/Etnaviv NPU驱动程序努力的一部分被纳入Mesa。
+<br>
+更多关于最新开源Rockchip NPU驱动程序成功的详细信息，请查看[这篇博客文章](https://blog.tomeuvizoso.net/2024/03/rockchip-npu-update-2-mobilenetv1-is.html)。
+<br>
+![图片暂时迷路了！！:(](img/16.png)
+<br>
+## 17.
