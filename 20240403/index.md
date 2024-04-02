@@ -70,3 +70,18 @@ SDL 2.30.2版本：
 ![图片暂时迷路了！！:(](img/2.png)
 <br>
 ## 3.
+AMD今天宣布了Ryzen Embedded 8000系列处理器——这是他们首款提供带有板载神经处理单元（NPU）的Ryzen AI的AMD嵌入式芯片。这种AMD XDNA NPU支持与现有的Ryzen 8000系列上的Ryzen AI类似。
+<br>
+Ryzen Embedded 8000系列使用Zen 4核心，并将提供最多8核心/16线程的设计。Ryzen Embedded 8000系列使用与Ryzen 8000G系列相同的4nm TSMC工艺。Ryzen Embedded 8000系列部件的TDP将在15至54瓦特之间。
+<br>
+![图片暂时迷路了！！:(](img/3.png)
+<br>
+Ryzen Embedded 8000系列的顶级产品是Ryzen Embedded 8845HS，基础频率为3.8GHz，最大频率为5.1GHz，拥有8核心/16线程，cTDP为35~54瓦特。在产品线中较低位置的是6核心的Ryzen Embedded 8640U和Ryzen Embedded 8645HS部件。
+<br>
+随着Ryzen Embedded 8000系列支持Ryzen AI NPU，AMD正在为这些新处理器大力宣传工业AI能力。早在1月底，AMD终于发布了Ryzen AI / XDNA的开源Linux驱动程序。这对于Linux在Ryzen嵌入式设备上更为常见的情况来说是个好消息，因此这个驱动程序在未来的嵌入式/工业应用中将变得更加重要。不过，我还没有听说AMD有关于他们的XDNA驱动在Linux内核中的上游计划，或者其他围绕他们的XDNA / Ryzen AI软件工作的Linux计划。
+<br>
+鉴于这些都是在Zen 4上的迭代，并且那里已经有了稳定的支持，Ryzen Embedded 8000系列的Linux支持总体上应该是很好的，除了新的XDNA驱动程序对Ryzen AI及其在目前有限的软件支持可能存在的任何特殊性或问题。
+<br>
+AMD今天发布了一篇简短的博客文章，宣布了Ryzen Embedded 8000系列。还有一个Ryzen Embedded 8000系列产品页面，上面有关于这些新产品的更多细节。AMD的合作伙伴很快将推出Ryzen Embedded 8000系列系统。
+<br>
+## 4.
