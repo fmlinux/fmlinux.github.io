@@ -154,5 +154,5 @@ John Bridgman 在 2007 年开源倡议开始时担任 AMD Radeon 开源图形驱
 <br>
 祝贺 Bridgman 享有当之无愧的退休生活，并感谢他多年来为支持开源 Linux 驱动程序所做的努力。
 <br>
-![图片暂时迷路了！！:(](img/8.png)
+![图片暂时迷路了！！:(](img/10.png)
 <br>
