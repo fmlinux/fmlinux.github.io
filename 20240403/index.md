@@ -85,3 +85,12 @@ Ryzen Embedded 8000系列的顶级产品是Ryzen Embedded 8845HS，基础频率�
 AMD今天发布了一篇简短的博客文章，宣布了Ryzen Embedded 8000系列。还有一个Ryzen Embedded 8000系列产品页面，上面有关于这些新产品的更多细节。AMD的合作伙伴很快将推出Ryzen Embedded 8000系列系统。
 <br>
 ## 4.
+Mesa 24.1的Vulkan窗口系统集成（WSI）代码现在支持Wayland linux-drm-syncobj-v1协议，以实现显式同步支持。
+<br>
+3月底发布的Wayland Protocols 1.34引入了新的linux-drm-syncobj协议，允许使用DRM同步对象在Wayland下进行显式同步。这一直是提高Vulkan/OpenGL游戏等的同步支持的热切需求。GNOME合成器上周合并了实现此协议的支持，现在Mesa 24.1已经通过WSI集成为Vulkan驱动程序提供了支持。这个协议对于NVIDIA的专有Linux图形驱动程序来说也是一个大事，因为它解决了一些剩余的Wayland问题。Valve的Gamescope合成器已经合并了显式同步支持，除了GNOME Mutter代码之外，KDE Kwin和wlroots的合并请求仍然开放。XWayland对显式GPU同步的支持也接近尾声。
+<br>
+Valve的Joshua Ashton提出了Mesa的wsi：实现Wayland显式同步的合并请求，引入了这一支持。截至今天早上，它已经在Mesa Git中。Mesa 24.1预计将在5月底作为稳定版发布。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+<br>
+## 5.
