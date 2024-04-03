@@ -65,3 +65,14 @@ GCC 14分析器还改进了对C字符串操作的分析支持，现在通过-fan
 稳定的GCC 14.1编译器版本预计在未来几周内发布。更多关于GCC 14静态分析器改进的详情，请访问Red Hat开发者博客。
 <br>
 ## 6.
+去年，X.Org Server默认禁用了字节交换客户端，因为它是X.Org/XWayland代码库中一个大而已知的攻击面。今天公开的四个新CVE中有三个就是关于字节交换代码的，这进一步证明了这一点。
+<br>
+字节交换客户端支持是围绕不同CPU字节序的X.Org/XWayland客户端能够连接到X.Org Server。如今，不同的CPU字节序并不常见，去年字节交换客户端支持在没有太多争议的情况下被安全禁用。今天公开的三个CVE涉及ProcXIGetSelectedEvents、ProcXIPassiveGrabDevice、ProcAppleDRICreatePixmap中的堆缓冲区过度读取/数据泄露以及由于字节交换处理而造成的问题。
+<br>
+![图片暂时迷路了！！:(](img/6.png)
+<br>
+今天提出的第四个问题是ProcRenderAddGlyphs中的使用后自由问题。
+<br>
+XWayland 23.2.5和X.Org Server 21.1.12今天发布，用于修复这四个最新的安全问题。详情请参阅今天的安全通告。
+<br>
+## 7.
