@@ -50,3 +50,18 @@ Pitoiset在为Mesa RADV驱动配置VK_EXT_device_address_binding_report支持时
 这次合并今天已经进入Mesa Git，为本季度的Mesa 24.1稳定版本发布前的GPU调试提供帮助。RADV是第一个支持此VK_EXT_device_address_binding_report扩展的Mesa Vulkan驱动。
 <br>
 ## 5.
+David Malcolm的Red Hat编译器团队发布了他的年度博客文章，总结了即将发布的GCC 14稳定编译器版本中的静态分析改进。
+<br>
+Malcolm继续在GNU编译器集合的静态分析器支持（-fanalyzer）方面进行工作，并在这一领域取得了更多的增强。例如，GCC 14增加了一个新的“-Wanalyzer-infinite-loop”选项，尝试检测发生的简单无限循环案例。
+<br>
+在GCC 13的越界警告基础上，GCC 14编译器带来了缓冲区溢出的改进可视化。Malcolm设计了一些不错的基于文本的图表，更好地显示缓冲区溢出警告，以便开发者更容易理解问题。以下是David Malcolm分享的两个改进的ASCII艺术示例，用于可视化缓冲区溢出：
+<br>
+![图片暂时迷路了！！:(](img/5-1.png)
+<br>
+![图片暂时迷路了！！:(](img/5-2.png)
+<br>
+GCC 14分析器还改进了对C字符串操作的分析支持，现在通过-fanalyzer启用了新的基于污点的警告等。
+<br>
+稳定的GCC 14.1编译器版本预计在未来几周内发布。更多关于GCC 14静态分析器改进的详情，请访问Red Hat开发者博客。
+<br>
+## 6.
