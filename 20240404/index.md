@@ -76,3 +76,14 @@ GCC 14分析器还改进了对C字符串操作的分析支持，现在通过-fan
 XWayland 23.2.5和X.Org Server 21.1.12今天发布，用于修复这四个最新的安全问题。详情请参阅今天的安全通告。
 <br>
 ## 7.
+荷兰的PC供应商NovaCustom专注于隐私/安全意识硬件和用户自由，宣布推出了V54和V56笔记本电脑。这些新款笔记本电脑搭载了Intel Core Ultra “Meteor Lake” SoCs，自称是世界上最快的Coreboot笔记本电脑。
+<br>
+NovaCustom V54是一款14英寸的Meteor Lake笔记本电脑，起价为1,420欧元，而V56是一款16英寸的Meteor Lake笔记本电脑，起价为1,460欧元。两款型号都使用了Dasharo版本的Coreboot。与最近的Intel CPU上的Dasharo/Coreboot一样，仍然涉及到FSP的固件二进制文件，但至少使用Coreboot比通常使用的专有供应商BIOS/固件更开放。这些基于Coreboot的Meteor Lake笔记本电脑确实增加了对Intel Boot Guard启动完整性功能的支持，供有兴趣的人使用。
+<br>
+很高兴看到更多由新的Intel Core Ultra “Meteor Lake” SoCs提供动力的Coreboot设备，它们的集成Arc Graphics特别好。NovaCustom V54/V56可以配置高达96GB的RAM，还有可选的NVIDIA GeForce RTX图形处理器，供那些不想利用Arc Graphics的用户使用。这些笔记本电脑有双M.2 PCIe 4.0 NVMe SSD插槽，电池续航时间长达8小时，以及比早期NovaCustom笔记本电脑更多的更新。
+<br>
+希望了解更多关于这些新的基于Intel Meteor Lake Coreboot的笔记本电脑的信息，可以在NovaCustom.com上找到所有V54和V56的详细信息。
+<br>
+![图片暂时迷路了！！:(](img/7.png)
+<br>
+## 8.
