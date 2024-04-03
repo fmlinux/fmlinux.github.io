@@ -98,3 +98,21 @@ Google博客文章解释了Jpegli的工作原理：
 Google统计数据显示，Jpegli可以比传统的JPEG编解码器多压缩35%的高质量图像。目前，Jpegli代码至少存在于libjxl（JPEG-XL库）存储库中。
 <br>
 ## 9.
+著名的Linux内核维护者Greg Kroah-Hartman今天宣布Linux 6.7内核系列的生命周期（EOL）结束，敦促用户尽快升级到最新的Linux 6.8内核。
+<br>
+Linux内核6.7由Linus Torvalds于2024年1月7日发布，引入了诸如bcachefs文件系统等激动人心的新功能，这是一个为基于Linux的操作系统设计的写时复制（COW）文件系统，旨在与Btrfs和ZFS文件系统提供的现代功能竞争。
+<br>
+Linux 6.7还引入了对NVIDIA的GSP固件的支持，在Nouveau开源图形驱动程序中，为Btrfs文件系统引入了新功能，改进了EXT4文件系统，增加了一系列网络增强功能，以及众多新的和更新的驱动程序以更好地支持硬件。
+<br>
+经过仅仅十二次维护更新后，Linux 6.7内核系列现在被标记为EOL（生命周期结束），这意味着它将不再接收错误和安全修复。现在敦促使用Linux内核6.7的用户升级到Linux内核6.8版本。
+<br>
+*"请注意，这是最后发布的6.7.y内核。这个分支现在已经结束生命周期。请此时转移到6.8.y分支，"Greg Kroah-Hartman在Linux 6.7.12的邮件列表公告中说，这是该系列的最后一次维护更新。*
+<br>
+Linux内核6.8于2024年3月10日上个月发布，引入了诸如LAM（线性地址掩码）虚拟化支持KVM，新的Intel Xe DRM驱动程序，对CephFS的fscrypt支持，多尺寸THP（透明巨页）sysfs接口等新功能。
+<br>
+Linux 6.8已经为各种流行的GNU/Linux发行版提供动力，如Arch Linux和openSUSE Tumbleweed，并将成为即将发布的Fedora Linux 40和Ubuntu 24.04 LTS版本的默认内核。
+<br>
+Linux内核6.8今天也更新到了6.8.3版本，这将很快进入流行的GNU/Linux发行版的稳定软件仓库。Linux内核6.8.3包括相当多的变化，有4772次插入和2551次删除，在481个改变的文件中，因此这是一个强烈推荐的更新。
+<br>
+然而，我应该警告你，虽然Linux 6.8带来了前沿功能，但它也将是短暂的，只支持几个月。因此，如果你正在寻找内核的长期支持，你应该考虑转移到许多LTS内核系列之一，Linux 6.6 LTS是最新的，将支持到2026年12月。
+<br>
