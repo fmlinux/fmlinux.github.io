@@ -121,3 +121,15 @@ Gabriel的提议是利用一个大型语言模型来帮助及时审查代码。�
 虽然今年是愚人节的玩笑，但未来利用AI/LLM可能会帮助人手不足和资金不足的开源项目进行代码审查，并在提高开源项目生产力的许多其他相关领域提供帮助。看到AI在未来几年如何影响开源项目将会很有趣。
 <br>
 ## 8.
+经过多年在Ubuntu Server/Cloud的使用，Ubuntu 23.10开始采用Canonical的Netplan声明式网络配置软件，现在Netplan已完全准备好承担Ubuntu 24.04 LTS的所有职责。经过七年的开发，Netplan 1.0已准备好从服务器到桌面的主流使用。
+<br>
+Netplan是Canonical开发的网络配置管理器，依赖于YAML配置文件。Netplan反过来与NetworkManager和systemd-networkd等接口连接。
+<br>
+Netplan 1.0发布于2月29日，而关于这一里程碑的公告今天刚刚发布。Netplan 1.0拥有更好的稳定性，同时支持WPA2和WPA3，稳定的libnetplan1 API，Mellanox VF-LAG支持高速SR-IOV网络，以及各种其他新设置和改进。
+<br>
+![图片暂时迷路了！！:(](img/8.png)
+<br>
+更多关于Netplan 1.0发布的细节，将在Ubuntu 24.04 LTS上扮演所有网络需求的中心角色，可以通过开发者Lukas Märdian的博客文章找到。更多Netplan 1.0的细节可以通过GitHub找到。
+<br>
+Ubuntu 24.04 LTS将于四月底发布。
+<br>
