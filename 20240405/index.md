@@ -70,3 +70,24 @@ Qt Creator 13 现在还支持使用 NPM 为 YAML、JSON 和 Bash 设置语言服
 ![图片暂时迷路了！！:(](img/4.png)
 <br>
 ## 5.
+Power Profiles Daemon软件在UPower项目下发布了0.21版本，现在可以自动识别电池状态，根据您的Linux笔记本电脑是连接到交流电还是电池电源来调整CPU功率/性能行为。
+<br>
+Power Profiles Daemon 0.21现在将自动调整AMD和Intel P-State CPU频率调整驱动程序的行为，如果切换到电池电源。此外，这个守护进程还有各种修复和其他增强。
+<br>
+![图片暂时迷路了！！:(](img/5.png)
+<br>
+在v0.21版本的发布公告中，Marco Trevisan总结了变化： 
+<br>
+*“自从这个版本发布以来，power-profiles-daemon就能够识别电池状态，一些驱动程序在使用电池上的平衡配置文件时会使用更节能的状态。特别是AMD和Intel P-State驱动程序将使用balance_power EPP配置文件，而对于Intel驱动程序，我们还将能源性能偏差设置为8（而不是6）。*
+<br>
+*这个版本还包含了对powerprofilesctl命令行工具的各种修复，当使用启动或版本命令时。现在该工具有了更好的文档，因为我们为它生成了一个手册页面（如果安装了python3-argparse）和bash补全。我们甚至生成了ZSH补全，但必须提供安装路径。*
+<br>
+*守护进程的命令行界面已经改进，以便于调试，所以使用–help-debug来获取更多信息。*
+<br>
+*systemd服务的锁定设置已经被更加限制。*
+<br>
+*各种代码优化。”*
+<br>
+对于那些自己滚动Power Profiles Daemon而不是仅仅依赖于Linux发行版的人，更新后的守护进程可以从FreeDesktop.org GitLab下载。
+<br>
+## 6.
