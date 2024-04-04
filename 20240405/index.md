@@ -91,3 +91,18 @@ Power Profiles Daemon 0.21现在将自动调整AMD和Intel P-State CPU频率调�
 对于那些自己滚动Power Profiles Daemon而不是仅仅依赖于Linux发行版的人，更新后的守护进程可以从FreeDesktop.org GitLab下载。
 <br>
 ## 6.
+多年来，PostgreSQL数据库服务器一直在添加各种JSON特性，而现在，用于处理JavaScript对象表示法（JSON）结构化数据的最新添加是JSON_TABLE() SQL函数。
+<br>
+JSON_TABLE()函数允许将JSON数据转换为关系视图，该视图反过来可以在FROM子句等中使用。JSON_TABLE()一直是PostgreSQL尚未实现的最后几个JSON SQL函数之一，而MySQL / MariaDB、Oracle以及其他一些数据库解决方案已经提供了JSON_TABLE()函数。从新的PostgreSQL文档中引用：
+<br>
+*“JSON_TABLE是一个SQL/JSON函数，它查询JSON数据并将结果呈现为关系视图，可以作为常规SQL表访问。你可以在SELECT、UPDATE或DELETE的FROM子句中使用JSON_TABLE，也可以在MERGE语句中作为数据源。”*
+<br>
+PostgreSQL的初始JSON_TABLE()支持今天已合并到Git中。这将成为下一个主要版本，PostgreSQL 17的一部分。
+<br>
+今天还合并了PostgreSQL的非递归JSON解析器。这种PostgreSQL的替代JSON解析器可以用于增量解析数据，但代价是比递归下降解析器慢。
+<br>
+最初使用这个新的JSON解析器的代码是用于增量解析备份清单。所有这些代码今天都已合并到PostgreSQL Git中。
+<br>
+![图片暂时迷路了！！:(](img/6.png)
+<br>
+## 7.
