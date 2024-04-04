@@ -59,3 +59,14 @@ Arm编译器工程师Kristof Beyls提出了一个基于BOLT的解决方案的初
 除了上述的RFC消息外，这个小工具扫描器的原型代码可以在GitHub上找到。
 <br>
 ## 4.
+Qt 6.7 工具包在本周早些时候发布后，今天发布了 Qt Creator 13 集成开发环境。Qt Creator 是为 Qt/C++ 定制的 IDE，旨在通过紧密的 Qt 集成和支持多种功能来加速开发人员的生产力。
+<br>
+Qt Creator 13 为 Linux on ARM 提供了离线和在线安装程序，改进了作为 Qt Creator 13 一部分的停靠用户界面，增强了 IDE 的欢迎模式，对 Apple iOS 17 设备提供了部分支持，并且对 Qt 应用程序管理器提供了初步支持。Qt Creator 13 允许创建、构建、部署、运行和调试使用 Qt 应用程序管理器的设备应用程序，适用于 Qt6 和使用 CMake 构建系统。
+<br>
+Qt Creator 13 现在还支持使用 NPM 为 YAML、JSON 和 Bash 设置语言服务器。
+<br>
+通过 Qt.io 可以下载并获取有关 Qt Creator 13 集成开发环境的更多详情。
+<br>
+![图片暂时迷路了！！:(](img/4.png)
+<br>
+## 5.
