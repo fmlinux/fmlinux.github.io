@@ -21,3 +21,24 @@ Overstreet 在拉取请求中解释了 Bcachefs 修复代码的良好状态：
 这些代码现在等待 Linus Torvalds 拉取，以进一步提高 Bcachefs 在主线内核上的质量。
 <br>
 ## 2.
+最近在 Linux 6.10 合并窗口之前，加密子系统的开发分支中加入了对 VFIO 实时迁移的支持，这一支持是针对英特尔的 QuickAssist Technology (QAT) 驱动程序的。
+<br>
+英特尔 QAT 对于加速支持软件的压缩和加密非常有用，特别是在拥有 QAT 加速卡或在最近的 Xeon 可扩展处理器上找到 QAT 支持的情况下。这种实时迁移支持是关于能够处理在节点之间迁移的客户虚拟机，同时保留 QAT 支持。
+<br>
+![图片暂时迷路了！！:(](img/2.png)
+<br>
+新排队的代码允许 Intel QAT Gen4 SRIOV 虚拟功能 (VFs) 的实时迁移。QAT 驱动程序可以保存和恢复 VF 所包含的bank 的状态。英特尔补丁系列解释说： 
+<br>
+*以下是测试 QAT GEN4 VF 实时迁移所需的步骤：*
+<br>
+*1.将一个或多个 QAT GEN4 VF 设备绑定到模块 qat_vfio_pci.ko*
+<br>
+*2.将 VFs 分配给虚拟机并启用设备实时迁移*
+<br>
+*3.在 VM 内部使用 QAT VF 运行工作负载，例如使用 qatlib*
+<br>
+*4.将 VM 从源节点迁移到目的节点*
+<br>
+为 Intel QAT 准备的实时迁移支持的补丁已在 cryptodev-2.6.git 中排队，以便在下个月开放的 Linux 6.10 合并窗口之前准备好。
+<br>
+## 3.
