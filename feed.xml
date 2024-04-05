@@ -1,0 +1,31 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.title | xml_escape}}</title>
+        <link>{{ site.url }}</link>
+        <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" />
+        <description>开源新闻汇总</description>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+        {% for page in site.html_pages reversed limit:10 %}
+          {% if page.url != '/' %}
+          <item>
+              <title>{{ page.title | xml_escape }}</title>
+              <link>
+                  {{ page.url | prepend: site.url }}
+              </link>
+              <description>
+                  {{ page.content | escape | truncate: '400' | xml_escape }}
+              </description>
+              <guid>
+                  {{ page.url | prepend: site.url }}
+              </guid>
+          </item>
+          {% endif %}
+        {% endfor %}
+    </channel>
+</rss>
